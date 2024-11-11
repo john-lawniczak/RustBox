@@ -9,3 +9,8 @@ fn main() {
 
     println!("Outer x again: {}", x); // Print the outer x again
 }
+
+// ------------------------
+fn add(x: u32) -> u32 {
+    x + x
+}
