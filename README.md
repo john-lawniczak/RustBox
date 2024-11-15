@@ -30,24 +30,10 @@ cargo build
 `cargo check` - checks if code compiles without compiling    
 `executable` - is in target/debug
 
-Sample Guessing Game
-```rust
-use std::io;
+`cargo install cargo-script` - llows you to quickly execute standalone Rust scripts without needing a full Cargo project structure
+`cargo script src/[filename].rs` - runs a specific Rust script ([filename].rs) located in the src folder, without requiring a Cargo.toml or the full project setup
 
-fn main() {
-    println!("Guess the number!");
 
-    println!("Please input your guess.");
-
-    let mut guess = String::new();
-
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-
-    println!("You guessed: {guess}");
-}
-```
 -----
 # Memory Allocation: Ownership, Borrowing, and Lifetimes
 [Ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)    
