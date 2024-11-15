@@ -26,5 +26,7 @@ fn main () {
     }
 
     let deck = Deck { cards }; // deck is variable, {struct literal}
-    println! ("My deck: {:?}", deck); // or  printlin! ("My deck: {deck}") 
+    
+    // # here formatter print nicely
+    println! ("My deck: {:#?}", deck); // or  printlin! ("My deck: {deck}") 
 }
