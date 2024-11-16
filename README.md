@@ -11,12 +11,6 @@ Getting Started
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
-```rust
-fn main() {
-    println!("Hello, world!");
-}
-```
 -----
 Check Version
 ```
@@ -32,70 +26,50 @@ cargo build
 `cargo check` - checks if code compiles without compiling    
 `executable` - is in target/debug
 
-`cargo install cargo-script` - llows you to quickly execute standalone Rust scripts without needing a full Cargo project structure
+`cargo install cargo-script` - llows you to quickly execute standalone Rust scripts without needing a full Cargo project structure    
 `cargo script src/[filename].rs` - runs a specific Rust script ([filename].rs) located in the src folder, without requiring a Cargo.toml or the full project setup
 
-### 1. `rustc`
-   - Compiles individual Rust source files into executable binaries.
-
-### 2. `cargo`
-   - Manages Rust projects, builds, and runs code, handles dependencies.
-
-### 3. `cargo new`
-   - Creates a new Rust project (binary or library).
-
-### 4. `cargo build`
+`rustc`     
+   - Compiles individual Rust source files into executable binaries.    
+`cargo`    
+   - Manages Rust projects, builds, and runs code, handles dependencies.    
+`cargo new`     
+   - Creates a new Rust project (binary or library).    
+`cargo build`
    - Compiles the project.
-
-### 5. `cargo run`
+`cargo run`     
    - Compiles and runs the project.
-
-### 6. `cargo run -q`
+ `cargo run -q`     
    - Runs the project without displaying the build output (quiet mode).
-
-### 7. `cargo test`
-   - Runs the project's tests.
-
-### 8. `cargo clean`
-   - Removes build artifacts (the `target/` directory).
-
-### 9. `cargo update`
+ `cargo test`    
+   - Runs the project's tests.     
+ `cargo clean`    
+   - Removes build artifacts (the `target/` directory).    
+ `cargo update`    
    - Updates project dependencies to the latest versions.
-
-### 10. `cargo check`
+ `cargo check`
    - Checks the code for errors without compiling.
-
-### 11. `cargo doc`
+ `cargo doc`
    - Generates documentation for the project.
-
-### 12. `cargo publish`
+`cargo publish`
    - Publishes the crate to crates.io.
-
-### 13. `cargo install`
+ `cargo install`
    - Installs a binary or tool from crates.io.
-
-### 14. `rustup`
+ `rustup`
    - Manages Rust toolchains and versions.
-
-### 15. `rustup component add`
+   -  `rustup component add`
    - Adds additional components (e.g., Clippy, Rustfmt).
-
-### 16. `rustup target add`
+ `rustup target add`
    - Adds a target architecture for cross-compilation.
-
-### 17. `rustdoc`
+`rustdoc`
    - Generates documentation from Rust source comments.
-
-### 18. `cargo bench`
+ `cargo bench`
    - Runs benchmark tests (requires nightly toolchain).
-
-### 19. `cargo fix`
+ `cargo fix`
    - Automatically fixes code for compatibility with the latest Rust edition.
-
-### 20. `cargo uninstall`
+ `cargo uninstall`
    - Uninstalls a previously installed binary.
-
-### 21. `cargo new --vcs`
+`cargo new --vcs`
    - Initializes a new project with version control (e.g., Git).
 
 
@@ -112,8 +86,8 @@ Statically typed.
 
 Scalar Types: Represent a single value:
 
-- **Signed Integers**: `i8`, `i16`, `i32`, `i64`, `i128`, `isize`
-- **Unsigned Integers**: `u8`, `u16`, `u32`, `u64`, `u128`, `usize`
+- **Signed Integers**: `i8`, `i16`, `i32`, `i64`, `i128`, `isize` (no decimal places)
+- **Unsigned Integers**: `u8`, `u16`, `u32`, `u64`, `u128`, `usize` (no decimal places)
 
 Floating-Point Types:
 - `f32`: 32-bit floating point
