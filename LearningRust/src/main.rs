@@ -28,6 +28,9 @@ impl Deck {
         // Return the deck with the generated cards
         Deck { cards }
     }
+    fn shuffle(&self) {
+        
+    }
 }
 
 fn main() {
