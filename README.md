@@ -29,48 +29,27 @@ cargo build
 `cargo install cargo-script` - llows you to quickly execute standalone Rust scripts without needing a full Cargo project structure    
 `cargo script src/[filename].rs` - runs a specific Rust script ([filename].rs) located in the src folder, without requiring a Cargo.toml or the full project setup
 
-`rustc`     
-   - Compiles individual Rust source files into executable binaries.    
-`cargo`    
-   - Manages Rust projects, builds, and runs code, handles dependencies.    
-`cargo new`     
-   - Creates a new Rust project (binary or library).    
-`cargo build`
-   - Compiles the project.
-`cargo run`     
-   - Compiles and runs the project.
- `cargo run -q`     
-   - Runs the project without displaying the build output (quiet mode).
- `cargo test`    
-   - Runs the project's tests.     
- `cargo clean`    
-   - Removes build artifacts (the `target/` directory).    
- `cargo update`    
-   - Updates project dependencies to the latest versions.
- `cargo check`
-   - Checks the code for errors without compiling.
- `cargo doc`
-   - Generates documentation for the project.
-`cargo publish`
-   - Publishes the crate to crates.io.
- `cargo install`
-   - Installs a binary or tool from crates.io.
- `rustup`
-   - Manages Rust toolchains and versions.
-   -  `rustup component add`
-   - Adds additional components (e.g., Clippy, Rustfmt).
- `rustup target add`
-   - Adds a target architecture for cross-compilation.
-`rustdoc`
-   - Generates documentation from Rust source comments.
- `cargo bench`
-   - Runs benchmark tests (requires nightly toolchain).
- `cargo fix`
-   - Automatically fixes code for compatibility with the latest Rust edition.
- `cargo uninstall`
-   - Uninstalls a previously installed binary.
-`cargo new --vcs`
-   - Initializes a new project with version control (e.g., Git).
+`rustc` - Compiles individual Rust source files into executable binaries.
+`cargo` - Manages Rust projects, builds, and runs code, handles dependencies.    
+`cargo new` - Creates a new Rust project (binary or library).    
+`cargo build`- Compiles the project.    
+`cargo run` - Compiles and runs the project.    
+ `cargo run -q` - Runs the project without displaying the build output (quiet mode).    
+ `cargo test`  - Runs the project's tests.      
+ `cargo clean` - Removes build artifacts (the `target/` directory).        
+ `cargo update` - Updates project dependencies to the latest versions.    
+ `cargo check` - Checks the code for errors without compiling.    
+ `cargo doc` - Generates documentation for the project.    
+`cargo publish` - Publishes the crate to crates.io.    
+ `cargo install` - installs a binary or tool from crates.io.    
+ `rustup` - manages Rust toolchains and versions.    
+`rustup component add` - Adds additional components (e.g., Clippy, Rustfmt).    
+ `rustup target add` - Adds a target architecture for cross-compilation.    
+`rustdoc` - Generates documentation from Rust source comments.    
+ `cargo bench` - Runs benchmark tests (requires nightly toolchain).    
+ `cargo fix` - Automatically fixes code for compatibility with the latest Rust edition.    
+ `cargo uninstall` - Uninstalls a previously installed binary.    
+`cargo new --vcs` - Initializes a new project with version control (e.g., Git).    
 
 
 -----
