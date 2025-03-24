@@ -102,3 +102,32 @@ fn add(a: i32, b: i32) -> i32 {
     // IMPLICIT return
     // a + b   -- as long as there is NO SEMICOLON
 }
+```
+
+-----
+
+# Fuzzing
+
+Fuzzing helps discover edge cases and bugs by throwing lots of randomized input at your functions.
+
+## 🔍 `cargo-fuzz` (most common fuzzing tool)
+
+- Install: `cargo install cargo-fuzz`
+- Initialize: `cargo fuzz init`
+- Add a fuzz target: `cargo fuzz add my_fuzz_target`
+- Run: `cargo fuzz run my_fuzz_target`
+
+```rust
+
+Example target (`fuzz_targets/my_fuzz_target.rs`):
+```rust
+#![no_main]
+use libfuzzer_sys::fuzz_target;
+
+fuzz_target!(|data: &[u8]| {
+    // Call the function you're testing here
+    let _ = my_function_to_fuzz(data);
+});
+```
+
+
