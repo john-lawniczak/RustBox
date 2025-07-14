@@ -5,6 +5,11 @@ Playing with Rust
 - [Standard Library](https://doc.rust-lang.org/std/)
 - [Crates.io](https://crates.io/)
 
+[Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024)
+
+_Rust always wants to minimize unexpected updates to data._
+
+_
 ----
 Getting Started
 
